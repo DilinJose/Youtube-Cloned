@@ -14,7 +14,7 @@ const App = () => {
 
   const getData = (item) => {
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?q=${item}&key=AIzaSyCAdkq0Vp5yMmHK3Em6te5SfDAsZzqSk8Y&type=video&maxResults=20&part=snippet`
+      `https://www.googleapis.com/youtube/v3/search?q=${item}&key=AIzaSyDmjBkiBWRpfVCCKbs5aMcX_Gvc5Jh5dOQ&type=video&maxResults=20&part=snippet`
     )
       .then((res) => {
         return res.json();
@@ -30,6 +30,9 @@ const App = () => {
   useEffect(() => {
     getData(searchTerm);
   }, [searchTerm]);
+
+
+  console.log(videoData);
 
   return (
     <div>

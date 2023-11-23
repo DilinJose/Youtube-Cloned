@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 const Videos = ({ videoData,setVideoId }) => {
 
+  console.log(videoData);
+
   const navigate = useNavigate();
   const handlePlayer = (videoId) => {
     setVideoId(videoId);

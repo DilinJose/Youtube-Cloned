@@ -14,12 +14,12 @@ const PlayList = ({ videoData,setVideoId }) => {
             onClick={() => {
               handlePlayer(data.id.videoId);
             }}
-            className="d-flex flex-column justify-content-center align-items-center"
+            className="d-flex flex-column justify-content-center align-items-center ms-4"
             style={{
               margin: "10px",
               border: "1px solid #ccc",
               padding: "10px",
-              width: "30%",
+              width: "40%",
             }}
           >
             <img
